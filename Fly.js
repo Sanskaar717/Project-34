@@ -27,7 +27,7 @@ class Fly{
         var pointB = this.pointB;
          push(); 
          stroke("#3FE0D0");
-         strokeWeight(2);
+         strokeWeight(0);
          line(pointA.x,pointA.y,pointB.x,pointB.y);
         }
     }

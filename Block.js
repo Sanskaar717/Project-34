@@ -13,9 +13,11 @@ class Block{
 
     display(){
         var pos = this.body.position;
+        var angle = this.body.angle;
         push();
-        stroke("yellow");
-        strokeWeight(2);
+        rotate(angle);
+        stroke("black");
+        strokeWeight(4);
         fill("red");
         rect(pos.x,pos.y,this.width,this.height);
         pop();

@@ -54,6 +54,7 @@ function draw() {
 
   ground.display();
   hero.display();
+  fly.display();
   b1.display();
   b2.display();
   b3.display();
