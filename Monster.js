@@ -1,12 +1,12 @@
-class Hero{
+class Monster{
     constructor(x,y){
         var options = {
-            isStatic : false
+            isStatic : true
         }
 
-        this.body = Bodies.circle(x,y,250,options);
-        this.radius = 250;
-        this.image = loadImage("Images/Superhero-01.png");
+        this.body = Bodies.circle(x,y,5,options);
+        this.radius = 5;
+        this.image = loadImage("Images/Monster-01.png");
         World.add(myWorld,this.body);
     }
 
@@ -15,8 +15,9 @@ class Hero{
         var angle = this.body.angle;
         push();
         translate(pos.x,pos.y);
+        rotate(angle);
         imageMode(CENTER);
-        image(this.image,0,0,700,200);
+        image(this.image,0,0,200,200);
         pop();
     }
 }

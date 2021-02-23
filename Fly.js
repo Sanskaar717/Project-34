@@ -4,8 +4,8 @@ class Fly{
         var con = {
             bodyA : bodyA,
             pointB : pointB,
-            stiffness : 0.05,
-            length : 10
+            stiffness : 0,
+            length : 300
           }
 
           this.pointB = pointB;
@@ -17,7 +17,7 @@ class Fly{
         this.sling.bodyA = body;
     }
 
-    fly(){
+    flying(){
         this.sling.bodyA = null;
     }
 
@@ -28,7 +28,7 @@ class Fly{
          push(); 
          stroke("#3FE0D0");
          strokeWeight(2);
-         line(pointA.x,pointA.y,pointB.x,pointA.y);
+         line(pointA.x,pointA.y,pointB.x,pointB.y);
         }
     }
 }
